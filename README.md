@@ -11,6 +11,10 @@
 1. [神经网络与深度学习](https://github.com/nndl/nndl.github.io)
 2. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
 
+### Generative Adversaril Network(GAN)
+1. [InfoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/InfoGAN.pdf)
+2. [tempoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/tempoGAN.pdf)
+
 ### Numerical Methods
 #### Optical Flow
 Methods:
@@ -40,8 +44,9 @@ Optical Flow](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/m
 1. [My radar project demo](https://github.com/chrimerss/RadarEnhancement)
 
 # Updates
+- [x] FlowNet: Learning Optical Flow with Convolutional Networks(2019.5.23)
+- [x] 神经网络与深度学习 (2019.5.22)
 - [x] optical flow models as an open benchmark for radar-based precipitation nowcasting (2019.5.16)
 - [x] Novel Video Prediction for Large-scale Scene using Optical Flow (2019.5.16)
 - [x] Generating Videos with Scene Dynamics/GAN (2019.5.16)
-- [x] 神经网络与深度学习 (2019.5.22)
 - [ ] Two Frame Motion Estimation Based on Polynomial Expansion
