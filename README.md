@@ -14,6 +14,8 @@
 ### Generative Adversaril Network(GAN)
 1. [InfoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/InfoGAN.pdf)
 2. [tempoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/tempoGAN.pdf)
+3. [WGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN.pdf)
+4. [WGAN-improved](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN-improved.pdf)
 
 ### Numerical Methods
 #### Optical Flow
