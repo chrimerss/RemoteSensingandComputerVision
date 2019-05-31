@@ -8,8 +8,14 @@
 
 ## Computer Vision
 ### Machine Learning Basics
+
 1. [神经网络与深度学习](https://github.com/nndl/nndl.github.io)
-2. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
+2. 
+### ML/DL for weather prediction
+1. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
+2. [A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/pdf/1811.07490.pdf)
+
+### ML/DL for rainfall estimation
 
 ### Generative Adversaril Network(GAN)
 1. [InfoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/InfoGAN.pdf)
