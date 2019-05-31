@@ -2,6 +2,13 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{geometry}
+\usepackage{amsmath}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\usepackage{tikz}
+\usepackage{float}
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{arrow} = [thick,->,>=stealth]
  \geometry{
  a4paper,
  total={170mm,257mm},
@@ -18,9 +25,86 @@ bottom=15mm,
 \subsection{SPANet}
 \href{https://arxiv.org/pdf/1904.01538.pdf}{Spatial Attentive Single-Image Deraining with a High Quality Real Rain Dataset}
 \subsubsection{Key Points}
-$bullet$ Created Real Images 
-	    Network
+\begin{itemize}
+\item Created Real Images 
+\item Network (Attentive Network with four-directional feature map)
+\end{itemize}
+\subsubsection{Create real images}
+since previous works are highly dependent on synthetic dataset to train the model, which is an ill-posed question. When their model is performed on real-world situation, they tend to be illy behaved, and of course not scaleable.\\
+Author generates series of real world images to train. He extracts successive images at one rainfall event, and then dipicts histogram of every pixel, followed by manually inspection whether this pixel is occupied with rainfall or not because we understand that rain pixels are brighten.\\ \bigskip
+%Flowchart goes here..
+\begin{tikzpicture}[node distance=2cm]
+\node (mode)[process]{calculate mode $\phi_L$ };
+\node (percentile)[process, right of=mode, xshift=3cm]{percentile of models $R_l^{min},R_l^{max}$};
+\node(line)[process, below of=mode, xshift=2cm]{find a line for $p$ to cross max number of percentiles};
+\node(generate)[process, right of=line, xshift=7cm]{generate clean image from series of rainy images};
+\draw [arrow] (mode) -- (percentile);
+\draw [arrow] (percentile) -- (line);
+\draw [arrow] (line) -- (generate);
+\end{tikzpicture}
+
 \subsubsection{Network}
+``Recurrent neural networks with ReLU and identity matrix initialization (IRNN) for natural language processing have shown to be easy to train, good at long range dependencies as well as efficient. When applied to computer vision problems, their key advantage is that information can be efficiently propagated across the entire image to accumulate long range varing contextual information.''
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{two-round-four-directional IRNN.PNG}
+\caption{two-round four-directional IRNN schemetization}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{SPANet}
+\caption{Network description}
+\end{figure}
+\subsubsection{Loss Function}
+\begin{equation}
+L_{total}=L_1+L_{SSIM}+L_{Att}
+\end{equation}
+\begin{equation}
+L_{Att}=\norm{A-M}_2
+\end{equation}
+where A is the attention map from the first SAM in the network andMis the binary map of the rain streaks, which is computed by thresholding the difference between the rain image and clean image. In this binary map, a 1 indicates that the pixel is covered by rain and 0 otherwise.
+
+\subsection{JORDER}
+\href{http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html}{Deep Joint Rain Detection and Removal from a Single Image}
+\subsubsection{Key Points}
+\begin{itemize}
+\item seperate background learning and rain streak learning
+\item network representing rainfall accumulation
+\item recurrent rain detection and removal network
+\end{itemize}
+\subsubsection{Binary Rain Streak Map}
+\begin{equation}
+O=B+SR
+\end{equation}
+$SR$ is binary values, where 1 indicates rain regions and 0 indicates non-rain regions.''(1) it gives additional information for the network to learn about rain streak regions. (2) it allows a new rain removal pipeline to detect rain regions first, and the to operate differently on rain-streak and non-rain-streak regions, preserving background details.''
+\subsubsection{Rain Accumulation and Heavy Rain}
+\begin{equation}
+O=\alpha(B+\sum_{t=1}^{s}{S_t}R)+(1-\alpha)*A
+\end{equation}
+t: overlapping streak number\\
+s: number of shape and direction\\
+A: global atmospheric light\\
+$\alpha$: scene transmission\\
+\subsubsection{Network}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{JORDEN}
+\caption{JORDEN network schematizattion}
+\end{figure}
+For the training part, the author selected set of corresponding rain images, background images, rain regions maps and rain streak maps for training.
+\subsubsection{Loss Function}
+Multi-Task Objection Function
+\begin{equation}
+\operatorname*{argmin}_{B,S,R}\norm{O-B-SR}_2^2+P_b(B)+P_s(S)+P_r(R)
+\end{equation}
+\begin{equation}
+L(\theta)=\frac{1}{n}(\norm{F_{rs}(o_i;\theta)-s_i}^2+\lambda_1\norm{F_{bg}(o_i;\theta)-g_i}^2-\lambda_2(log\hat{r}_{i,1}r_{i,1}+log(1-\hat{r}_{i,2})(1-r_{i,2})))
+\end{equation}
+with 
+\begin{equation}
+\hat{r}_{i,j}=\frac{exp{F_{rs}(o_i;\theta)}}{\sum_{k=1}^{2}exp{F_{rs,k}(o_i;\theta)}},j\in{\{1,2\}}
+\end{equation}
+Metrics Function: \href{https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio}{PSNR}, \href{https://en.wikipedia.org/wiki/Structural_similarity}{SSIM}
 
 \subsection{PReNet}
 \href{https://csdwren.github.io/papers/PReNet_cvpr_camera.pdf}{Progressive Image Deraining Networks: A Better and Simpler Baseline}
