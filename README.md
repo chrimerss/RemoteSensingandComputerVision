@@ -10,14 +10,19 @@
 ### Machine Learning Basics
 
 1. [神经网络与深度学习](https://github.com/nndl/nndl.github.io)
-2. 
+2.
 ### ML/DL for weather prediction
 1. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
 2. [A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/pdf/1811.07490.pdf)
 
-### ML/DL for rainfall estimation
+### [ML/DL for rainfall estimation](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Rain Removal/rain_removal_notes.pdf)
+1. Video-based rainfall removal
+2. Image-based rainfall removal
+    2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Rain Removal/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)
+    2.2 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain Dataset](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Rain Removal/Spatial_Attentive_Single-Image_Deraining_with_a_High_Quality_Real_Rain_Dataset.pdf)
 
-### Generative Adversaril Network(GAN)
+
+### [Generative Adversaril Network(GAN)](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/MachineLearning/texnote/GAN.pdf)
 1. [InfoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/InfoGAN.pdf)
 2. [tempoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/tempoGAN.pdf)
 3. [WGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN.pdf)

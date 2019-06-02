@@ -2,6 +2,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{geometry}
+\usepackage{float}
  \geometry{
  a4paper,
  total={170mm,257mm},
@@ -33,7 +34,7 @@ framework corresponds to a minimax two-player game. Generator will be forcing to
 Some related work to do so including deep-Boltzmann machine, Deep Belief Networks, Variational AutoEncoder (VAE)
 \subsection{Adversarial Nets}
 In his paper, he suggests that optimal Discriminator \textit{D} is achieved when \textit{G} is fixed.
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{GAN-Goodfellow}
 \caption{Algorithm description}
@@ -53,17 +54,77 @@ The one proposed by Goodfellow, the original loss function used for
 \subsection{NSGAN}
 In NSGAN, the difference between it with MMGAN is that it starts to use $-log(D(x))$ because it proves that, at the begining, the gradient for $-log(1-D(x))$ is small which may not reasonable as we need the gradient to be large to converge. So with $log(D(x))$, it initialized a higher gradient at first and decreasing progressively.
 
+\subsection{f-GAN}
+First, it proves that every divergence can be represented by $D_f(P \mid Q)=\int_xq(x)f(\frac{p(x)}{q(x)})$, and $f$ function should comply two criteria: 1. convex function, 2. $f(1)=0$. When $f(x)=xlog(x)$, it is KL divergence, and if $f(x)=-log(x)$, it is reversed KL-divergence.
+
+\textbf{Fenchel Conjugate}, it is saying that every f-divergence has a conjugate function which could also be optimized towards our objective. $f^*(t)=max(xt-f(x))$
+
+A collection of f-divergence functions can be found here: \href{https://arxiv.org/pdf/1606.00709.pdf}{f-GAN: Training generative neural samples using variational divergence minimization}
+
+In conclusion, choosing different f-divergence seems affect the results little.
+
 \section{CGAN}
 \subsection{Applications}
 \subsection{Diagram}
 \subsection{Loss Function}
 
 \section{WGAN}
-\subsection{Applications}
 
-\subsection{Diagram}
 \subsection{Loss Function}
+In WGAN, it tries to minimize the so called \textbf{Earth Movement} divergence. imagine two distribution $P$ and $Q$, now if we expect to move distribution $P$ towards $Q$, then how much effort should we put? This is exactly what we seek for minimizing.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=200]{W-GAN_loss}
+    \caption{two distribution $P$ adn $Q$, the distance between $P$ and $Q$ is $d$. W-GAN is performing to minimize this $d$}
+\end{figure}
+
+According to the loss function, we should minimize the following equation:
+\begin{equation}
+    W(P_{data},P_G)=\max_{D\in 1-Lipschitz}\{E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]\}
+\end{equation}
+But, when applying gradient descent optimizer, it looks infeasible to force weights optimize with constraints "1-Lipschitz". Hence, the author proposed a method called "weight clipping". Put it simply, if weight larger than a threshold, then cut it becoming thaw-like.
 \subsubsection{Generator loss}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{WGAN_algorithm}
+    \caption{Description about WGAN}
+\end{figure}
+\section{improved WGAN}
+\subsection{improvement compared to WGAN}
+A differentiable 1-Lipschitz function if and only if it has gradient with norm less than or equal to 1 everywhere.
+\begin{equation}
+    \lvert \bigtriangledown_{x}D(x) \rvert \leq 1
+
+    W(P_{data},P_G)=\max_{D} \{E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]-\labmda \sum_{x}max(0,\lvert \bigtriangledown_{x}D(x) \rvert -1)dx\}
+\end{equation}\\
+
+it leverages an additional term "regularization" to satisfy the constrain that WGAN has proposed. But it is impossible to sample all x from that function. Instead, author decides to sample x from a penalty distribution. Then the equation becomes
+\begin{equation}
+
+    W(P_{data},P_G)=\max_{D} \{E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]-\lambda E_{x \sim Penalty}[max(0,\lvert \bigtriangledown_{x}D(x) \rvert -1)]\}
+\end{equation}
+\section{Energy-based GAN}
+\subsection{difference}
+\begin{itemize}
+\item using auto-encoder as discriminator D\\
+basically, it is saying that if an image feeding into discriminator, returns small reconstruction error, and then it proves this image is good.
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{EBGAN}
+    \caption{discriminator in EBGAN}
+\end{figure}
+\end{itemlize}
+\section{Divide and Conquer}
+\subsection{Patch GAN}
+Patch GAN is basically train the image by dividing it into sub-patches
+\subsection{Stack GAN}
+Stack GAN is used to generate high resolution image by creating multi-stages discriminator and generator. In the original paper, it intakes embedding texts and then in the first stage, generate 64x64 dimension images. After that, it creates 256x256 dimension in the second generator and discriminator.
+\subsection{Progressive Growing GAN}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{ProgressiveGAN}
+    \caption{Progressive growing GAN}
+\end{figure}
 \section{SGAN}
 \subsection{Applications}
 \subsection{Diagram}
@@ -71,9 +132,33 @@ In NSGAN, the difference between it with MMGAN is that it starts to use $-log(D(
 \subsubsection{Generator loss}
 \section{infoGAN}
 \subsection{Applications}
+\textbf{infoGAN} could be used to control the image you want to generate. For instance, you can specify the input code to determine the digit to be bold/italic.
 \subsection{Diagram}
-\subsection{Loss Function}
-\subsubsection{Generator loss}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{infoGAN}
+    \caption{infoGAN}
+\end{figure}
+\section{Feature Disentangle}
+\subsection{Applications}
+\textbf{Feature disentangle} is used to generate the series variations for the object. For instance, we want to generate the face with different projections. That is to say, if you understand the feature within the code, then you can extract that feature, to generate something meaningful.
+\section{Couple GAN}
+\subsection{Applications}
+Style Transfer
+\subsection{diagram}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{coGAN}
+    \caption{CoGAN}
+\end{figure}
+\section{UNIT: Unsupervised Image-to-image Translation}
+\subsection{Applications}
+image transfer, day-to-night,attribute based image translation, cat-to-cheetah.\href{https://github.com/mingyuliutw/UNIT}{github site}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{UNIT}
+    \caption{UNIT}
+\end{figure}
 \section{tempoGAN}
 \subsection{Applications}
 \subsection{Diagram}
