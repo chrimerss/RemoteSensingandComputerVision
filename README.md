@@ -10,16 +10,20 @@
 ### Machine Learning Basics
 
 1. [神经网络与深度学习](https://github.com/nndl/nndl.github.io)
-2.
+2. [Standford CS231: Convolutional Neural Networks for Visual Recognition](http://vision.stanford.edu/teaching/cs231n/)
+
 ### ML/DL for weather prediction
 1. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
 2. [A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/pdf/1811.07490.pdf)
 
-### [ML/DL for rainfall estimation](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Rain Removal/rain_removal_notes.pdf)
-1. Video-based rainfall removal
-2. Image-based rainfall removal
-    2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Rain Removal/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)
-    2.2 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain Dataset](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Rain Removal/Spatial_Attentive_Single-Image_Deraining_with_a_High_Quality_Real_Rain_Dataset.pdf)
+### [ML/DL for rainfall estimation](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf)
+1. Video-based rainfall removal  
+2. Image-based rainfall removal  
+
+    2.1  [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)
+
+
+    2.2  [Spatial Attentive Single-Image Deraining with a High Quality Real Rain Dataset](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Spatial_Attentive_Single-Image_Deraining_with_a_High_Quality_Real_Rain_Dataset.pdf)
 
 
 ### [Generative Adversaril Network(GAN)](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/MachineLearning/texnote/GAN.pdf)
@@ -57,6 +61,7 @@ Optical Flow](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/m
 1. [My radar project demo](https://github.com/chrimerss/RadarEnhancement)
 
 # Updates
+- [x] Update GAN collections and rainfall removal category(2019.6.2)
 - [x] FlowNet: Learning Optical Flow with Convolutional Networks(2019.5.23)
 - [x] 神经网络与深度学习 (2019.5.22)
 - [x] optical flow models as an open benchmark for radar-based precipitation nowcasting (2019.5.16)
