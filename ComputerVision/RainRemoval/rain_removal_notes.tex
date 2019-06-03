@@ -106,6 +106,42 @@ with
 \end{equation}
 Metrics Function: \href{https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio}{PSNR}, \href{https://en.wikipedia.org/wiki/Structural_similarity}{SSIM}
 
+\subsection{D3RNet}
+\href{http://www.icst.pku.edu.cn/struct/Pub%20Files/2019/ywh_tip19.pdf}{Dynamic Rounting Residue Recurrent Network for Video Rain Removal}
+\subsubsection{Key Points}
+\begin{itemize}
+\item Dynamic Framework for video rain removal
+\item Recurrent units to handle temporal fusion
+\item Residual unit to compensate for negative rain features
+\end{itemize}
+\subsection{Model context}
+\subsubsection{Occlusion-Aware Rain Model}
+To address the occlusion effect caused by rain streaks, the author proposed a hybrid rain model which is adaptive to mdoel rain occlusions. All pixels in rain frames are classified into two groups: 1) the ones following the additive rain model the first equation; 2) the others whose pixel values are just equal to the rain reliance.
+\begin{equation}
+O_t=(1-\alpha)(B_t+S_t)+\alpha_tA_t
+\end{equation}
+\begin{equation}
+\alpha_t(i,j)=
+	\begin{cases}
+		1 & \text{if $(i,j)\in \Omega_S$}\\
+		0 & \text{if $(i,j)\not\in \Omega_S$}
+	\end{cases}
+\end{equation}
+\subsubsection{Rain Removal Context}
+''In our work, the difference of adjacent frames are used as a standard to classify motion regions. For groundtruth background frames, if the square of the difference of two adjacent frames is greater than 0.01, the region is denoted as motion regions.''
+
+\subsection{Network}
+\subsubsection{Spatial-Temporal Residue Recurrent Network}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{D3RNET}
+\caption{Network architecture evoved from venilla convolutional neural network to our proposed spatial-temporal residue recurrent network}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{D3RNET2}
+\caption{D3RNet framework}
+\end{figure}
 \subsection{PReNet}
 \href{https://csdwren.github.io/papers/PReNet_cvpr_camera.pdf}{Progressive Image Deraining Networks: A Better and Simpler Baseline}
 
