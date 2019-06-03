@@ -105,6 +105,34 @@ with
 \hat{r}_{i,j}=\frac{exp{F_{rs}(o_i;\theta)}}{\sum_{k=1}^{2}exp{F_{rs,k}(o_i;\theta)}},j\in{\{1,2\}}
 \end{equation}
 Metrics Function: \href{https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio}{PSNR}, \href{https://en.wikipedia.org/wiki/Structural_similarity}{SSIM}
+\subsection{Semi-supervised Transfer Learning for Single Image Rain Removal}
+\href{https://arxiv.org/pdf/1807.11078.pdf}{Semi-supervised Transfer Learning for Single Image Rain Removal} attacks to provide two approaches, one supervised for paired no-rain and synthetic rain images, and the other unsupervised for real-world rainy images.
+\subsection{Model Formulation}
+Firstly, the author expresses the rain as Gaussian mixture model (GMM), because "GMM can be universal approximations to any continous functions if the parameters are learned appropriately."
+\begin{equation*}
+    R \sim  \sum_{k=1}^{K}\pi_{k}N(R \vert \mu_{k}, \sum_{k})
+\end{equation*}
+
+The negative log likelihood function imposed on these unsupervised samples can be written as
+
+
+\begin{equation*}
+    L_{unsupervised}(R;\Pi,\Sigma) =-    \sum_{n=1}^{N}log        \sum_{k=1}^{K}\pi_{k}N(R_n \vert 0,\Sigma_{k})
+\end{equation*}
+\subsection{Learning Diagram}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{semi-supervised_SIRR}
+    \caption{schematic representation of the framework}
+\end{figure}
+
+\subsection{Loss Function}
+
+\begin{equation*}
+    L_{supervised}=\    \sum_{i=1}^{N} \vert\vert f_{w}(x_i)-y_i \vert\vert_{F}^{2}
+\end{equation*}
+
+
 
 \subsection{PReNet}
 \href{https://csdwren.github.io/papers/PReNet_cvpr_camera.pdf}{Progressive Image Deraining Networks: A Better and Simpler Baseline}
