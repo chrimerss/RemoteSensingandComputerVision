@@ -11,6 +11,10 @@
 
 1. [神经网络与深度学习](https://github.com/nndl/nndl.github.io)
 2. [Standford CS231: Convolutional Neural Networks for Visual Recognition](http://vision.stanford.edu/teaching/cs231n/)
+3. [Learning kernels for CV](https://cvml.ist.ac.at/papers/lampert-fnt2009.pdf)
+
+### Object Detection/Tracking Generalized
+1. [Gaussian Mixture Models (GMM)](https://github.com/llSourcell/Gaussian_Mixture_Models/blob/master/intro_to_gmm_%26_em.ipynb)
 
 ### ML/DL for weather prediction
 1. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
