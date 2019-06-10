@@ -4,29 +4,40 @@
 \BOOKMARK [1][-]{section.2}{Various GAN}{}% 4
 \BOOKMARK [2][-]{subsection.2.1}{MMGAN}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.2}{NSGAN}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.3}{}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{f-GAN}{section.2}% 7
 \BOOKMARK [1][-]{section.3}{CGAN}{}% 8
 \BOOKMARK [2][-]{subsection.3.1}{Applications}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.2}{Diagram}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.3}{Loss Function}{section.3}% 11
 \BOOKMARK [1][-]{section.4}{WGAN}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Applications}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Diagram}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.3}{Loss Function}{section.4}% 15
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Generator loss}{subsection.4.3}% 16
-\BOOKMARK [1][-]{section.5}{SGAN}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Applications}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Diagram}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.3}{Loss Function}{section.5}% 20
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Generator loss}{subsection.5.3}% 21
-\BOOKMARK [1][-]{section.6}{infoGAN}{}% 22
-\BOOKMARK [2][-]{subsection.6.1}{Applications}{section.6}% 23
-\BOOKMARK [2][-]{subsection.6.2}{Diagram}{section.6}% 24
-\BOOKMARK [2][-]{subsection.6.3}{Loss Function}{section.6}% 25
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Generator loss}{subsection.6.3}% 26
-\BOOKMARK [1][-]{section.7}{tempoGAN}{}% 27
-\BOOKMARK [2][-]{subsection.7.1}{Applications}{section.7}% 28
-\BOOKMARK [2][-]{subsection.7.2}{Diagram}{section.7}% 29
-\BOOKMARK [2][-]{subsection.7.3}{Loss Function}{section.7}% 30
-\BOOKMARK [3][-]{subsubsection.7.3.1}{Generator loss}{subsection.7.3}% 31
-\BOOKMARK [1][-]{section.8}{Summary}{}% 32
+\BOOKMARK [2][-]{subsection.4.1}{Loss Function}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Generator loss}{subsection.4.1}% 14
+\BOOKMARK [1][-]{section.5}{improved WGAN}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{improvement compared to WGAN}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Energy-based GAN}{}% 17
+\BOOKMARK [2][-]{subsection.6.1}{difference}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Divide and Conquer}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{Patch GAN}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Stack GAN}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.3}{Progressive Growing GAN}{section.7}% 22
+\BOOKMARK [1][-]{section.8}{SGAN}{}% 23
+\BOOKMARK [2][-]{subsection.8.1}{Applications}{section.8}% 24
+\BOOKMARK [2][-]{subsection.8.2}{Diagram}{section.8}% 25
+\BOOKMARK [2][-]{subsection.8.3}{Loss Function}{section.8}% 26
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Generator loss}{subsection.8.3}% 27
+\BOOKMARK [1][-]{section.9}{infoGAN}{}% 28
+\BOOKMARK [2][-]{subsection.9.1}{Applications}{section.9}% 29
+\BOOKMARK [2][-]{subsection.9.2}{Diagram}{section.9}% 30
+\BOOKMARK [1][-]{section.10}{Feature Disentangle}{}% 31
+\BOOKMARK [2][-]{subsection.10.1}{Applications}{section.10}% 32
+\BOOKMARK [1][-]{section.11}{Couple GAN}{}% 33
+\BOOKMARK [2][-]{subsection.11.1}{Applications}{section.11}% 34
+\BOOKMARK [2][-]{subsection.11.2}{diagram}{section.11}% 35
+\BOOKMARK [1][-]{section.12}{UNIT: Unsupervised Image-to-image Translation}{}% 36
+\BOOKMARK [2][-]{subsection.12.1}{Applications}{section.12}% 37
+\BOOKMARK [1][-]{section.13}{tempoGAN}{}% 38
+\BOOKMARK [2][-]{subsection.13.1}{Applications}{section.13}% 39
+\BOOKMARK [2][-]{subsection.13.2}{Diagram}{section.13}% 40
+\BOOKMARK [2][-]{subsection.13.3}{Loss Function}{section.13}% 41
+\BOOKMARK [3][-]{subsubsection.13.3.1}{Generator loss}{subsection.13.3}% 42
+\BOOKMARK [1][-]{section.14}{Summary}{}% 43

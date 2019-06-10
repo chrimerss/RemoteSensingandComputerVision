@@ -34,12 +34,12 @@
 ### Object Detection/Tracking Generalized<a name='objectdetect'></a>
 1. [Gaussian Mixture Models (GMM)](https://github.com/llSourcell/Gaussian_Mixture_Models/blob/master/intro_to_gmm_%26_em.ipynb)
 
-### ML/DL for weather prediction<a name='mlweather'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf)) 
+### ML/DL for weather prediction<a name='mlweather'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/weather.pdf)) 
 1. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
 2. [A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/pdf/1811.07490.pdf)
 3. [Deep Learning for Precipitation Nowcasting: A benchmark and A new model](https://arxiv.org/pdf/1706.03458.pdf)
 
-### ML/DL for rainfall estimation<a name='mlrain'></a>([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
+### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
 1. Video-based rainfall removal  
 2. Image-based rainfall removal  
 
@@ -47,16 +47,14 @@
     2.2 [Rain Streaks Detection and Removal in Image based on
 Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org/2975/6fb5238c69cea5d544df6227fa79ef6aa2cb.pdf)
 
-    2.3  [Spatial Attentive Single-Image Deraining with a High Quality Real Rain Dataset](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Spatial_Attentive_Single-Image_Deraining_with_a_High_Quality_Real_Rain_Dataset.pdf)
+    2.3 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain dataset](https://github.com/stevewongv/SPANet)
 
-    2.4 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain dataset](https://github.com/stevewongv/SPANet)
+    2.4 [Dynamic Routing Residue Recurrent Network for Video Removal](http://www.icst.pku.edu.cn/struct/Pub%20Files/2019/ywh_tip19.pdf)
 
-    2.5 [Dynamic Routing Residue Recurrent Network for Video Removal](http://www.icst.pku.edu.cn/struct/Pub%20Files/2019/ywh_tip19.pdf)
-
-    2.6 [Progressive Image Deraining Networks: A Better and Simpler Baseline](https://github.com/csdwren/PReNet)
+    2.5 [Progressive Image Deraining Networks: A Better and Simpler Baseline](https://github.com/csdwren/PReNet)
 
 
-### Generative Adversaril Network(GAN)<a name='gan'></a>([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/MachineLearning/texnote/GAN.pdf))
+### Generative Adversaril Network(GAN)<a name='gan'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/MachineLearning/texnote/GAN.pdf))
 1. [Pytorch-GAN-zoo](https://github.com/facebookresearch/pytorch_GAN_zoo)
 2. [InfoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/InfoGAN.pdf)
 3. [tempoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/tempoGAN.pdf)
