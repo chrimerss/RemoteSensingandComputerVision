@@ -3,6 +3,8 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{float}
+\usepackage{amsmath}
+\usepackage{tikz}
  \geometry{
  a4paper,
  total={170mm,257mm},
@@ -36,9 +38,9 @@ Some related work to do so including deep-Boltzmann machine, Deep Belief Network
 In his paper, he suggests that optimal Discriminator \textit{D} is achieved when \textit{G} is fixed.
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{GAN-Goodfellow}
+\includegraphics[width=\linewidth]{GAN-Goodfellow.PNG}
 \caption{Algorithm description}
-\end{figure}\\
+\end{figure}
 
 \begin{equation}
 \label{1.1}
@@ -74,14 +76,16 @@ In conclusion, choosing different f-divergence seems affect the results little.
 In WGAN, it tries to minimize the so called \textbf{Earth Movement} divergence. imagine two distribution $P$ and $Q$, now if we expect to move distribution $P$ towards $Q$, then how much effort should we put? This is exactly what we seek for minimizing.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=200]{W-GAN_loss}
+    \includegraphics[width=200 pt]{W-GAN_loss}
     \caption{two distribution $P$ adn $Q$, the distance between $P$ and $Q$ is $d$. W-GAN is performing to minimize this $d$}
 \end{figure}
 
 According to the loss function, we should minimize the following equation:
+
 \begin{equation}
     W(P_{data},P_G)=\max_{D\in 1-Lipschitz}\{E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]\}
 \end{equation}
+
 But, when applying gradient descent optimizer, it looks infeasible to force weights optimize with constraints "1-Lipschitz". Hence, the author proposed a method called "weight clipping". Put it simply, if weight larger than a threshold, then cut it becoming thaw-like.
 \subsubsection{Generator loss}
 \begin{figure}[H]
@@ -89,19 +93,23 @@ But, when applying gradient descent optimizer, it looks infeasible to force weig
     \includegraphics[width=\linewidth]{WGAN_algorithm}
     \caption{Description about WGAN}
 \end{figure}
+
+
 \section{improved WGAN}
 \subsection{improvement compared to WGAN}
 A differentiable 1-Lipschitz function if and only if it has gradient with norm less than or equal to 1 everywhere.
-\begin{equation}
-    \lvert \bigtriangledown_{x}D(x) \rvert \leq 1
 
-    W(P_{data},P_G)=\max_{D} \{E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]-\labmda \sum_{x}max(0,\lvert \bigtriangledown_{x}D(x) \rvert -1)dx\}
-\end{equation}\\
+\begin{equation}
+\begin{split}
+    \mid \bigtriangledown_{x}D(x) \mid \leq 1  \\
+    W(P_{data},P_G)=\max_{D} \{E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]- \lambda \sum_{x} \max(0, \mid \bigtriangledown_{x}D(x) \mid -1)dx \} \\
+\end{split}
+\end{equation}
 
 it leverages an additional term "regularization" to satisfy the constrain that WGAN has proposed. But it is impossible to sample all x from that function. Instead, author decides to sample x from a penalty distribution. Then the equation becomes
-\begin{equation}
 
-    W(P_{data},P_G)=\max_{D} \{E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]-\lambda E_{x \sim Penalty}[max(0,\lvert \bigtriangledown_{x}D(x) \rvert -1)]\}
+\begin{equation}
+    W(P_{data}, P_G)=\max_{D} \{ E_{x \sim P_{data}}[D(x)]-E_{x \sim P_{G}}[D(x)]- \lambda E_{x \sim Penalty}[max(0, \mid \bigtriangledown_{x} D(x) \mid -1)] \}
 \end{equation}
 \section{Energy-based GAN}
 \subsection{difference}
@@ -113,7 +121,8 @@ basically, it is saying that if an image feeding into discriminator, returns sma
     \includegraphics[width=\linewidth]{EBGAN}
     \caption{discriminator in EBGAN}
 \end{figure}
-\end{itemlize}
+\end{itemize}
+
 \section{Divide and Conquer}
 \subsection{Patch GAN}
 Patch GAN is basically train the image by dividing it into sub-patches
@@ -160,8 +169,23 @@ image transfer, day-to-night,attribute based image translation, cat-to-cheetah.\
     \caption{UNIT}
 \end{figure}
 \section{tempoGAN}
+\href{https://github.com/thunil/tempoGAN}{tempoGAN: A Temporally Coherent, Volumetric GAN for Super-resolution Fluid Flow}
 \subsection{Applications}
+It is one of the methods that have been coupling with traditional physics. In this paper, the author uses tempoGAN to generate super-resolution results from traditional fuilds simulation. Traditionally, 2D or 3D fluids model is constrained by the grid size. course grid may result in the numerical instability while fine grids of course wastes more time and may not feasible considering the equipment. But with the tempoGAN, we are able to generate high resolution fluids with less efforts.
+\subsection{Key Points}
+\begin{itemize}
+\item first work to synthesize four-dimensional physics fields with neural networks
+\item temporal discriminator
+\item infer high resolution results with physical properties like velocity and vorticities.
+\item Physical-aware data augmentation
+\end{itemize}
+
 \subsection{Diagram}
+\begin{figure}[H]
+\centering
+\includegraphics{tempoGAN_diagram}
+\caption{schematic representation of tempoGAN framework}
+\end{figure}
 \subsection{Loss Function}
 \subsubsection{Generator loss}
 \section{Summary}
