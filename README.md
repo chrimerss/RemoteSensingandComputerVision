@@ -16,7 +16,7 @@
 
 ## Atmospheric Sciences<a name='atmos'></a>
 1. [Atmospheric Science](http://cup.aos.wisc.edu/453/2016/readings/Atmospheric_Science-Wallace_Hobbs.pdf) by JONH M. WALLACE and PETER V. HOBBS
-
+2. [Python Gallery for meterology](http://https://github.com/chrimerss/python-gallery)
 
 ## Remote Sensing<a name='remotesensing'></a>
 1. Hydrologic Remote Sensing: Capacity Building for Sustainability and Resilience
