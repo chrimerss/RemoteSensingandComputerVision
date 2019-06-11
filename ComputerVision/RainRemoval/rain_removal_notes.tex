@@ -174,14 +174,60 @@ O_t=(1-\alpha)(B_t+S_t)+\alpha_tA_t
 \subsubsection{Spatial-Temporal Residue Recurrent Network}
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{D3RNET}
+\includegraphics[width=\linewidth]{D3RNET.PNG}
 \caption{Network architecture evoved from venilla convolutional neural network to our proposed spatial-temporal residue recurrent network}
 \end{figure}
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{D3RNET2}
+\includegraphics[width=\linewidth]{D3RNET2.PNG}
 \caption{D3RNet framework}
 \end{figure}
+
+\subsection{ReMAEN}
+Single Image Deraining Using a Recurrent Multi-scale Aggregation and Enhancement Network
+
+\subsubsection{Key Points}
+\begin{itemize}
+\item Reccurent blocks with shared channel attention
+\item Detect multi-scale rain details
+\item Edge loss is applied to preserve the background texture
+\end{itemize}
+
+\subsubsection{Network}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{ReMAEN}
+\caption{Schematic Network description}
+\end{figure}
+
+\begin{equation}
+\begin{split}
+R_t= f_{ReMAEN}(I_{t-1})\, \\
+I_t=I_{t-1}-R_t\\
+\end{split}
+\end{equation}
+
+\subsubsection{Loss Function}
+\begin{itemize}
+\item MSE Loss \bigskip \\
+No need to describe MSE loss here but the reason author applies more than MSE loss is because that MSE tends to blur out the image, and thus some details will be lost.
+\item Edge Loss\\ \smallskip
+\begin{equation}
+L_{edge}=\frac{1}{HWC} \sum_{x=1}^{H} \sum_{y=1}^{W} \sum_{z=1}^{C} \vert \vert f(I_T)^{x,y,z}-f(I_{gt})^{x,y,z} \vert \vert^2
+\end{equation}
+Where the author defines the $f$ function as a edge detection kernel, see as follows,
+\begin{equation}
+K=
+\begin{pmatrix}
+-1 & -1 & -1 \\
+-1 &  8 & -1  \\
+-1 & -1 & -1   \\
+\end{pmatrix}
+\end{equation}
+
+\end{itemize}
+
 \subsection{PReNet}
 \href{https://csdwren.github.io/papers/PReNet_cvpr_camera.pdf}{Progressive Image Deraining Networks: A Better and Simpler Baseline}
 
