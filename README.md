@@ -41,9 +41,13 @@
 
 ### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
 1. Video-based rainfall removal  
+    
+    1.1 [Video Rain Streak Removal By Multiscale ConvolutionalSparse Coding](https://github.com/MinghanLi/MS-CSC-Rain-Streak-Removal)
+
 2. Image-based rainfall removal  
 
-    2.1  [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)
+    2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)  
+
     2.2 [Rain Streaks Detection and Removal in Image based on
 Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org/2975/6fb5238c69cea5d544df6227fa79ef6aa2cb.pdf)
 
