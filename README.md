@@ -63,7 +63,8 @@ Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org
 2. [InfoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/InfoGAN.pdf)
 3. [tempoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/tempoGAN.pdf)
 4. [WGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN.pdf)
-5. [WGAN-improved](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN-improved.pdf)
+5. [WGAN-improved](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN-improved.pdf) [github](https://github.com/jalola/improved-wgan-pytorch)
+6. [DehazeGAN](https://arxiv.org/abs/1810.09479) [code](https://github.com/thatbrguy/Dehaze-GAN)
 
 ### Numerical Methods<a name='numeric'></a>
 #### Optical Flow<a name='opticalflow'></a>
