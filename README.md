@@ -21,38 +21,41 @@
 ## Remote Sensing<a name='remotesensing'></a>
 1. Hydrologic Remote Sensing: Capacity Building for Sustainability and Resilience
 
+## Hydrology<a name="hydrology"></a>  ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/hydrology/hydrology.pdf))
+1. [23 Unsolved problems in hydrology UPH a community perspective](https://www.tandfonline.com/doi/pdf/10.1080/02626667.2019.1620507?needAccess=true)
+
 
 ## Computer Vision<a name='computervision'></a>
 ### Machine Learning Basics<a name='mlbasics'></a>
 
 1. [神经网络与深度学习](https://github.com/nndl/nndl.github.io)
 2. [Standford CS231: Convolutional Neural Networks for Visual Recognition](http://vision.stanford.edu/teaching/cs231n/)
-3. [Learning kernels for CV](https://cvml.ist.ac.at/papers/lampert-fnt2009.pdf)  
+3. [Learning kernels for CV](https://cvml.ist.ac.at/papers/lampert-fnt2009.pdf)
     3.1 Orientation Filter: Gabor Filter   [Interesting intro](https://medium.com/@anuj_shah/through-the-eyes-of-gabor-filter-17d1fdb3ac97); [opencv](https://docs.opencv.org/4.1.0/d4/d86/group__imgproc__filter.html#gae84c92d248183bd92fa713ce51cc3599)
 4. [Collection of Pytorch Lists](https://bharathgs.github.io/Awesome-pytorch-list/#cv)
 
 ### Object Detection/Tracking Generalized<a name='objectdetect'></a>
 1. [Gaussian Mixture Models (GMM)](https://github.com/llSourcell/Gaussian_Mixture_Models/blob/master/intro_to_gmm_%26_em.ipynb)
 
-### ML/DL for weather prediction<a name='mlweather'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/weather.pdf)) 
+### ML/DL for weather prediction<a name='mlweather'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/weather.pdf))
 1. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
 2. [A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/pdf/1811.07490.pdf)
 3. [Deep Learning for Precipitation Nowcasting: A benchmark and A new model](https://arxiv.org/pdf/1706.03458.pdf)
 
 ### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
-1. **Video-based rainfall removal**  
+1. **Video-based rainfall removal**
     1.1 [Video Rain Streak Removal By Multiscale ConvolutionalSparse Coding](https://github.com/MinghanLi/MS-CSC-Rain-Streak-Removal)
 
-2. **Image-based rainfall removal**  
-    2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)  
-    
+2. **Image-based rainfall removal**
+    2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)
+
     2.2 [Rain Streaks Detection and Removal in Image based on
     Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org/2975/6fb5238c69cea5d544df6227fa79ef6aa2cb.pdf)
-    
+
     2.3 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain dataset](https://github.com/stevewongv/SPANet)
-    
+
     2.4 [Dynamic Routing Residue Recurrent Network for Video Removal](http://www.icst.pku.edu.cn/struct/Pub%20Files/2019/ywh_tip19.pdf)
-   
+
     2.5 [Progressive Image Deraining Networks: A Better and Simpler Baseline](https://github.com/csdwren/PReNet)
 
 
@@ -93,6 +96,7 @@ Optical Flow](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/m
 1. [My radar project demo](https://github.com/chrimerss/RadarEnhancement)
 
 ## Updates<a name='updates'></a>
+- [x] Update hydrology (2019.6.16)
 - [x] Update GAN collections and rainfall removal category(2019.6.2)
 - [x] FlowNet: Learning Optical Flow with Convolutional Networks(2019.5.23)
 - [x] 神经网络与深度学习 (2019.5.22)
