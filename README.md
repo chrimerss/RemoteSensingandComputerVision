@@ -2,17 +2,18 @@
 
 ## Contents
 #### 1. [Atmosphric Sciences](#atmos)
-#### 2. [Remote Sensing](#remotesensing)
-#### 3. [Computer Vision](#computervision)
-##### 3.1 [Machine Learning Basics](#mlbasics)
-##### 3.2 [Object Detection](#objectdetect)
-##### 3.3 [ML/DL for Weather Prediction](#mlweather)
-##### 3.4 [ML/DL for Rainfall Estimation](#mlrain)
-##### 3.5 [Generative Adversaril Network](#gan)
-#### 4. [Numerical Models](#numeric)
-##### 4.1 [Optical Flow](#opticalflow)
-##### 4.2 [Semi-Lagrangian Scheme](#semilag)
-#### 5. [Updates](#updates)
+#### 2. [Hydrology](#hydrology)
+#### 3. [Remote Sensing](#remotesensing)
+#### 4. [Computer Vision](#computervision)
+##### 4.1 [Machine Learning Basics](#mlbasics)
+##### 4.2 [Object Detection](#objectdetect)
+##### 4.3 [ML/DL for Weather Prediction](#mlweather)
+##### 4.4 [ML/DL for Rainfall Estimation](#mlrain)
+##### 4.5 [Generative Adversaril Network](#gan)
+#### 5. [Numerical Models](#numeric)
+##### 5.1 [Optical Flow](#opticalflow)
+##### 5.2 [Semi-Lagrangian Scheme](#semilag)
+#### 6. [Updates](#updates)
 
 ## Atmospheric Sciences<a name='atmos'></a>
 1. [Atmospheric Science](http://cup.aos.wisc.edu/453/2016/readings/Atmospheric_Science-Wallace_Hobbs.pdf) by JONH M. WALLACE and PETER V. HOBBS
