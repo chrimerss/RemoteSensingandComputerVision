@@ -40,21 +40,19 @@
 3. [Deep Learning for Precipitation Nowcasting: A benchmark and A new model](https://arxiv.org/pdf/1706.03458.pdf)
 
 ### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
-1. Video-based rainfall removal  
-    
+1. **Video-based rainfall removal**  
     1.1 [Video Rain Streak Removal By Multiscale ConvolutionalSparse Coding](https://github.com/MinghanLi/MS-CSC-Rain-Streak-Removal)
 
-2. Image-based rainfall removal  
-
+2. **Image-based rainfall removal**  
     2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)  
-
+    
     2.2 [Rain Streaks Detection and Removal in Image based on
-Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org/2975/6fb5238c69cea5d544df6227fa79ef6aa2cb.pdf)
-
+    Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org/2975/6fb5238c69cea5d544df6227fa79ef6aa2cb.pdf)
+    
     2.3 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain dataset](https://github.com/stevewongv/SPANet)
-
+    
     2.4 [Dynamic Routing Residue Recurrent Network for Video Removal](http://www.icst.pku.edu.cn/struct/Pub%20Files/2019/ywh_tip19.pdf)
-
+   
     2.5 [Progressive Image Deraining Networks: A Better and Simpler Baseline](https://github.com/csdwren/PReNet)
 
 
@@ -63,7 +61,8 @@ Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org
 2. [InfoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/InfoGAN.pdf)
 3. [tempoGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/tempoGAN.pdf)
 4. [WGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN.pdf)
-5. [WGAN-improved](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN-improved.pdf)
+5. [WGAN-improved](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN-improved.pdf) | [github](https://github.com/jalola/improved-wgan-pytorch)
+6. [DehazeGAN](https://arxiv.org/abs/1810.09479) | [code](https://github.com/thatbrguy/Dehaze-GAN)
 
 ### Numerical Methods<a name='numeric'></a>
 #### Optical Flow<a name='opticalflow'></a>

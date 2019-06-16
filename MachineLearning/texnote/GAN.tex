@@ -188,6 +188,42 @@ It is one of the methods that have been coupling with traditional physics. In th
 \end{figure}
 \subsection{Loss Function}
 \subsubsection{Generator loss}
+
+\section{DehazeGAN}
+
+\subsection{Key Points}
+\begin{itemize}
+\item U-Net model with Tiramisu
+\item Perceptual loss (Vgg)
+\item Patch-GAN for discriminator
+\end{itemize}
+
+\subsection{Diagram}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{dehazeGAN_framework}
+\caption{schematic representation of dehazeGAN model framework}
+\end{figure}
+A simple U-Net framework is utilized in this context, sharing information between encoder and decoder networks.
+The generator replaces U-Net with Tiramisu and each layer contains (BatchNorm-ReLU-Convolution) operations.
+
+As for discriminator, it uses the same discriminator network (Patch GAN) as used in the original conditional GAN paper. It performs patch-wise comparison of the target and generated images, rather than pixel-wise comparison.
+\subsection{Loss function}
+\begin{equation}
+Loss_{cGAN}=E_{(x,y)}[log(D(x,y))]+E_{x,z}[log(1-D(x,G(x,z)))]
+\end{equation}
+\begin{equation}
+Loss_{total}=W_{gan}*L_{Adv}+W_{L1}*L_{L1}+W_{vgg}*L_{vgg}
+\end{equation}
+
+\textit{Perceptual Loss} \\
+\begin{equation}
+L_{vgg}=\frac{1}{CWH}\sum_{c=1}^C\sum_{w=1}^W\sum_{h=1}^H \vert\vert V(G(x,z)^{c,w,h})-V(y^{c,w,h}) \vert\vert
+\end{equation}
+where, $V$ represents the output channels, width and height respectively.
+
+It says that L2 or smooth L1 loss would improve the image quality. L2 Loss is more susceptible to artefacts than smooth L1 loss. using Feature Reconstruction Perceptual Loss provides a much visually pleasing result.
+
 \section{Summary}
 \begin{table*}[ht!]
 \begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}}|c|c|c}
