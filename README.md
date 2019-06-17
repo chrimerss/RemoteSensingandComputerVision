@@ -12,7 +12,8 @@
 #### 4. [Numerical Models](#numeric)
 ##### 4.1 [Optical Flow](#opticalflow)
 ##### 4.2 [Semi-Lagrangian Scheme](#semilag)
-#### 5. [Updates](#updates)
+#### 5. [Statistics](#stats)
+#### 6. [Updates](#updates)
 
 ## Atmospheric Sciences<a name='atmos'></a>
 1. [Atmospheric Science](http://cup.aos.wisc.edu/453/2016/readings/Atmospheric_Science-Wallace_Hobbs.pdf) by JONH M. WALLACE and PETER V. HOBBS
@@ -40,20 +41,20 @@
 3. [Deep Learning for Precipitation Nowcasting: A benchmark and A new model](https://arxiv.org/pdf/1706.03458.pdf)
 
 ### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
+
 1. **Video-based rainfall removal**  
+
     1.1 [Video Rain Streak Removal By Multiscale ConvolutionalSparse Coding](https://github.com/MinghanLi/MS-CSC-Rain-Streak-Removal)
+    1.2 [Is it Raining Outside?Detection of Rainfall using General-Purpose Surveillance Cameras](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Haurum_Is_it_Raining_Outside__Detection_of_Rainfall_using_General_Purpose) | [code](https://bitbucket.org/aauvap/aau-virada/src/master/)
 
 2. **Image-based rainfall removal**  
+
     2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)  
-    
     2.2 [Rain Streaks Detection and Removal in Image based on
-    Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org/2975/6fb5238c69cea5d544df6227fa79ef6aa2cb.pdf)
-    
-    2.3 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain dataset](https://github.com/stevewongv/SPANet)
-    
-    2.4 [Dynamic Routing Residue Recurrent Network for Video Removal](http://www.icst.pku.edu.cn/struct/Pub%20Files/2019/ywh_tip19.pdf)
-   
-    2.5 [Progressive Image Deraining Networks: A Better and Simpler Baseline](https://github.com/csdwren/PReNet)
+    Entropy Maximization and Background Estimation](https://pdfs.semanticscholar.org/2975/6fb5238c69cea5d544df6227fa79ef6aa2cb.pdf)  
+    2.3 [Spatial Attentive Single-Image Deraining with a High Quality Real Rain dataset](https://github.com/stevewongv/SPANet)  
+    2.4 [Dynamic Routing Residue Recurrent Network for Video Removal](http://www.icst.pku.edu.cn/struct/Pub%20Files/2019/ywh_tip19.pdf)  
+    2.5 [Progressive Image Deraining Networks: A Better and Simpler Baseline](https://github.com/csdwren/PReNet)  
 
 
 ### Generative Adversaril Network(GAN)<a name='gan'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/MachineLearning/texnote/GAN.pdf))
@@ -91,6 +92,10 @@ Optical Flow](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/m
 #### Semi-Lagrangian Scheme<a name='semilag'></a>
 
 1. [My radar project demo](https://github.com/chrimerss/RadarEnhancement)
+
+### Statistics<a name="stats"></a>
+
+1. [Probabilistic Programming and Bayesian Methods for Hackers](https://github.com/chrimerss/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
 
 ## Updates<a name='updates'></a>
 - [x] Update GAN collections and rainfall removal category(2019.6.2)
