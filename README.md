@@ -13,19 +13,23 @@
 #### 5. [Numerical Models](#numeric)
 ##### 5.1 [Optical Flow](#opticalflow)
 ##### 5.2 [Semi-Lagrangian Scheme](#semilag)
-#### 6. [Updates](#updates)
+#### 6. [Statistics](#stats)
+#### 7. [Updates](#updates)
+---------
 
 ## Atmospheric Sciences<a name='atmos'></a>
 1. [Atmospheric Science](http://cup.aos.wisc.edu/453/2016/readings/Atmospheric_Science-Wallace_Hobbs.pdf) by JONH M. WALLACE and PETER V. HOBBS
 2. [Python Gallery for meterology](http://https://github.com/chrimerss/python-gallery)
 
+------
 ## Remote Sensing<a name='remotesensing'></a>
 1. Hydrologic Remote Sensing: Capacity Building for Sustainability and Resilience
 
+--------
 ## Hydrology<a name="hydrology"></a>  ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/hydrology/hydrology.pdf))
 1. [23 Unsolved problems in hydrology UPH a community perspective](https://www.tandfonline.com/doi/pdf/10.1080/02626667.2019.1620507?needAccess=true)
 
-
+-------
 ## Computer Vision<a name='computervision'></a>
 ### Machine Learning Basics<a name='mlbasics'></a>
 
@@ -44,10 +48,16 @@
 3. [Deep Learning for Precipitation Nowcasting: A benchmark and A new model](https://arxiv.org/pdf/1706.03458.pdf)
 
 ### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
+
+
 1. **Video-based rainfall removal**
+
     1.1 [Video Rain Streak Removal By Multiscale ConvolutionalSparse Coding](https://github.com/MinghanLi/MS-CSC-Rain-Streak-Removal)
 
-2. **Image-based rainfall removal**
+    1.2 [Is it Raining Outside?Detection of Rainfall using General-Purpose Surveillance Cameras](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Haurum_Is_it_Raining_Outside__Detection_of_Rainfall_using_General_Purpose) | [code](https://bitbucket.org/aauvap/aau-virada/src/master/)
+
+2. **Image-based rainfall removal** 
+
     2.1 [JORDEN: Deep Joint Rain Detection from a Single Image](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/Deep_Joint_Rain_Detection_and_Removal_from_a_Single_Image.pdf.pdf)
 
     2.2 [Rain Streaks Detection and Removal in Image based on
@@ -69,8 +79,10 @@
 6. [DehazeGAN](https://arxiv.org/abs/1810.09479) | [code](https://github.com/thatbrguy/Dehaze-GAN)
 7. [Glow](https://arxiv.org/pdf/1807.03039.pdf) | [Blog](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html) | [github](https://github.com/openai/glow)
 
-### Numerical Methods<a name='numeric'></a>
-#### Optical Flow<a name='opticalflow'></a>
+--------
+
+## Numerical Methods<a name='numeric'></a>
+### Optical Flow<a name='opticalflow'></a>
 Methods:
 
 >Lucas-Kanade method:  it tracks the corner with Shi-Tomasi algorithm and calculate (u,v) by solving 9 equations and then estimate the 3x3 patch movement;
@@ -93,9 +105,16 @@ Optical Flow](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/m
 4. [my radar project demo](https://github.com/chrimerss/RadarEnhancement)
 5. [FlowNet: Learning Optical Flow with Convolutional Networks](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/NumericalMethods/OpticalFlow/Learning_Optical_Flow_with_DL(FlowNet).pdf)
 
-#### Semi-Lagrangian Scheme<a name='semilag'></a>
+### Semi-Lagrangian Scheme<a name='semilag'></a>
 
 1. [My radar project demo](https://github.com/chrimerss/RadarEnhancement)
+
+
+--------
+
+## Statistics<a name="stats"></a>
+
+1. [Probabilistic Programming and Bayesian Methods for Hackers](https://github.com/chrimerss/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
 
 ## Updates<a name='updates'></a>
 - [x] Update hydrology (2019.6.16)

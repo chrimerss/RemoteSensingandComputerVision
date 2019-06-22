@@ -231,5 +231,35 @@ K=
 \subsection{PReNet}
 \href{https://csdwren.github.io/papers/PReNet_cvpr_camera.pdf}{Progressive Image Deraining Networks: A Better and Simpler Baseline}
 
+
+\section{Video based Methods}
+\subsection{Detection of rainfall using general-purpose surveilance cameras}
+\href{Haurum_Is_it_Raining_Outside__Detection_of_Rainfall_using_General_Purpose}{Is it raining outside? Detection of rainfall using general-purpose surveilance cameras}
+
+\subsubsection{Key Points}
+\begin{itemize}
+\item A new publicly available rain dataset, consisting of surveilance videos, rainfall data from tipping bucket and disdrometer
+\item 3D CNN architecture
+\item open-source implementation of the rain level detection algorithm of Bossu
+\end{itemize}
+
+
+\subsubsection{Pipelines and model description}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{surveilance_camera_pipeline}
+\caption{Activity diagram of the rain detection algorithm by Bossu et al.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{surveilance_camera_pipeline_CNN}
+\caption{Overview of C3DCNN model structure}
+\end{figure}
+
+\subsubsection{results}
+In summary, for the rainfall detection, C3DCNN with full-connected layer turns to be the most accurate method. see full results from the paper mentioned above.
 \end{document}
+
+
 
