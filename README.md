@@ -79,6 +79,7 @@
 4. [WGAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN.pdf)
 5. [WGAN-improved](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/WGAN-improved.pdf) | [github](https://github.com/jalola/improved-wgan-pytorch)
 6. [DehazeGAN](https://arxiv.org/abs/1810.09479) | [code](https://github.com/thatbrguy/Dehaze-GAN)
+7. [Glow](https://arxiv.org/pdf/1807.03039.pdf) | [Blog](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html) | [github](https://github.com/openai/glow)
 
 --------
 
