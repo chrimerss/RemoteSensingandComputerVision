@@ -20,6 +20,7 @@
 ## Atmospheric Sciences<a name='atmos'></a>
 1. [Atmospheric Science](http://cup.aos.wisc.edu/453/2016/readings/Atmospheric_Science-Wallace_Hobbs.pdf) by JONH M. WALLACE and PETER V. HOBBS
 2. [Python Gallery for meterology](http://https://github.com/chrimerss/python-gallery)
+3. [A Review of Global Precipitation Datasets: Data Sources, Estimation, and Intercomparisons](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2017RG000574)
 
 ------
 ## Remote Sensing<a name='remotesensing'></a>
@@ -46,6 +47,7 @@
 1. [Generating Videos with Scene Dynamics/GAN](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/Generating_Videos_with_Scene_Dynamics.pdf)
 2. [A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/pdf/1811.07490.pdf)
 3. [Deep Learning for Precipitation Nowcasting: A benchmark and A new model](https://arxiv.org/pdf/1706.03458.pdf)
+4. [Temporal Convolutional Neural Network for the Classification of Satellite Image Time Series](https://arxiv.org/pdf/1811.10166.pdf)
 
 ### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
 
