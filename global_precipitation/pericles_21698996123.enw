@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%0 Journal Article
+%A Gebregiorgis, Abebe S.
+%A Kirstetter, Pierre-Emmanuel
+%A Hong, Yang E.
+%A Gourley, Jonathan J.
+%A Huffman, George J.
+%A Petersen, Walter A.
+%A Xue, Xianwu
+%A Schwaller, Mathew R.
+
+%T To What Extent is the Day 1 GPM IMERG Satellite Precipitation Estimate Improved as Compared to TRMM TMPA-RT?
+%D 2018
+%J Journal of Geophysical Research: Atmospheres
+%P 1694-1707
+%V 123
+%N 3
+%@ 2169-897X
+%R 10.1002/2017JD027606
+%U https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017JD027606
+%X Abstract Integrated Multi-Satellite Retrievals for Global Precipitation Measurement (IMERG) is the last generation precipitation data source for a wide array of research, operational, and societal applications. The Global Precipitation Measurement mission provides these global and high-resolution precipitation estimates through advanced satellite-based radar and radiometers. The degree of improvement of the new IMERG products needs to be investigated to further advance the algorithm's development and application. This study focuses on systematically and extensively evaluating the uncalibrated Version 3 Late Run IMERG product, which has both backward and forward morphing, and highlights the level of improvement in comparison to its predecessor Version 7 Tropical Rainfall Measurement Mission (TRMM)-based Multi-satellite Precipitation Analysis real-time product. Retrievals from different passive microwave (PMW) and infrared (IR) sensors contributing to IMERG are evaluated over the conterminous United States using ground-based sensor precipitation estimates derived from the Multi-Radar Multi-Sensor system as reference. An error decomposition scheme is implemented to separate the total error into three independent components, hit, miss-rain, and false-rain biases, to trace the degree of improvement of the new algorithm. IMERG exhibits definite improvement related to miss-rain and false-rain bias reduction and hit rate. The improvement relative to the TRMM -IR component is more substantial than relative to the PMW retrieval as a result of the new Kalman smoother and the PMW morphing reducing the use of IR relative to the TRMM-based Multi-satellite Precipitation Analysis. Findings of this study confirm the advances of the new generation of multisatellite precipitation relative to its predecessor and highlight areas requiring additional investigation.
+
+
+
+
