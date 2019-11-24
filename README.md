@@ -119,6 +119,7 @@ Optical Flow](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/m
 1. [Probabilistic Programming and Bayesian Methods for Hackers](https://github.com/chrimerss/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
 
 ## Updates<a name='updates'></a>
+- [x] Migrate to [library](https://chrimerss.github.io/allenslib/)
 - [x] Update hydrology (2019.6.16)
 - [x] Update GAN collections and rainfall removal category(2019.6.2)
 - [x] FlowNet: Learning Optical Flow with Convolutional Networks(2019.5.23)
