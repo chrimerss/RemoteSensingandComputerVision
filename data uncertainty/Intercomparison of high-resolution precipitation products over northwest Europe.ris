@@ -1,0 +1,34 @@
+
+
+
+
+
+TY  - JOUR
+T1  - Intercomparison of High-Resolution Precipitation Products over Northwest Europe
+AU  - Kidd, C.
+AU  - Bauer, P.
+AU  - Turk, J.
+AU  - Huffman, G. J.
+AU  - Joyce, R.
+AU  - Hsu, K.-L.
+AU  - Braithwaite, D.
+Y1  - 2011/08/26
+PY  - 2011
+DA  - 2012/02/01
+N1  - doi: 10.1175/JHM-D-11-042.1
+DO  - 10.1175/JHM-D-11-042.1
+T2  - Journal of Hydrometeorology
+JF  - Journal of Hydrometeorology
+JO  - J. Hydrometeor.
+SP  - 67
+EP  - 83
+VL  - 13
+IS  - 1
+PB  - American Meteorological Society
+N2  - AbstractSatellite-derived high-resolution precipitation products (HRPP) have been developed to address the needs of the user community and are now available with 0.25° ? 0.25° (or less) subdaily resolutions. This paper evaluates a number of commonly available satellite-derived HRPPs covering northwest Europe over a 6-yr period. Precipitation products include the Tropical Rainfall Measuring Mission (TRMM) Multisatellite Precipitation Analysis (TMPA), the Climate Prediction Center (CPC) morphing (CMORPH) technique, the CPC merged microwave technique, the Naval Research Laboratory (NRL) blended technique, and the Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks (PERSIANN) technique. In addition, the Geosynchronous Operational Environmental Satellite (GOES) precipitation index (GPI) and the European Centre for Medium-Range Weather Forecasting (ECMWF) operational forecast model products are included for comparison. Surface reference data from the European radar network is used as ground truth, supported by the Global Precipitation Climatology Centre (GPCC) precipitation gauge analysis and gauge data over the United Kingdom. Measures of correlation, bias ratio, probability of detection, and false alarm ratio are used to evaluate the products. Results show that satellite products generally exhibit a seasonal cycle in correlation, bias ratio, probability of detection, and false alarm ratio, with poorer statistics during the winter. The ECMWF model also shows a seasonal cycle in the correlation, although the results are poorer during the summer, while the bias ratio, probability of detection, and false alarm ratio are consistent through all seasons. Importantly, all the satellite HRPPs underestimate precipitation over northwest Europe in all seasons.
+AB  - AbstractSatellite-derived high-resolution precipitation products (HRPP) have been developed to address the needs of the user community and are now available with 0.25° ? 0.25° (or less) subdaily resolutions. This paper evaluates a number of commonly available satellite-derived HRPPs covering northwest Europe over a 6-yr period. Precipitation products include the Tropical Rainfall Measuring Mission (TRMM) Multisatellite Precipitation Analysis (TMPA), the Climate Prediction Center (CPC) morphing (CMORPH) technique, the CPC merged microwave technique, the Naval Research Laboratory (NRL) blended technique, and the Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks (PERSIANN) technique. In addition, the Geosynchronous Operational Environmental Satellite (GOES) precipitation index (GPI) and the European Centre for Medium-Range Weather Forecasting (ECMWF) operational forecast model products are included for comparison. Surface reference data from the European radar network is used as ground truth, supported by the Global Precipitation Climatology Centre (GPCC) precipitation gauge analysis and gauge data over the United Kingdom. Measures of correlation, bias ratio, probability of detection, and false alarm ratio are used to evaluate the products. Results show that satellite products generally exhibit a seasonal cycle in correlation, bias ratio, probability of detection, and false alarm ratio, with poorer statistics during the winter. The ECMWF model also shows a seasonal cycle in the correlation, although the results are poorer during the summer, while the bias ratio, probability of detection, and false alarm ratio are consistent through all seasons. Importantly, all the satellite HRPPs underestimate precipitation over northwest Europe in all seasons.
+SN  - 1525-755X
+M3  - doi: 10.1175/JHM-D-11-042.1
+UR  - https://doi.org/10.1175/JHM-D-11-042.1
+Y2  - 2019/11/19
+ER  - 

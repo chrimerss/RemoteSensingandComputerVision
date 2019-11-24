@@ -1,0 +1,44 @@
+TY  - CONF
+T1  - Evaluation of Multi-Radar Multi-Sensor (MRMS) and Stage IV Gauge-adjusted Quantitative Precipitation Estimate (QPE) During Hurricane Harvey
+A1  - Gao, S.
+A1  - Zhang, J.
+A1  - Li, D.
+A1  - Jiang, H.
+A1  - Fang, N. Z.
+JO  - AGU Fall Meeting Abstracts
+VL  - 2018
+Y1  - 2018/12/1
+SP  - NH42A-07
+KW  - 1821 Floods
+KW  - HYDROLOGYDE: 1932 High-performance computing
+KW  - INFORMATICSDE: 4303 Hydrological
+KW  - NATURAL HAZARDSDE: 4342 Emergency management
+KW  - NATURAL HAZARDS
+UR  - https://ui.adsabs.harvard.edu/abs/2018AGUFMNH42A..07G
+N2  - Radar-based quantitative precipitation estimate (QPE) serves as input
+for flood forecasting, and its importance gets magnified during
+catastrophic storms, like Hurricane Harvey. The record-shattering
+rainfall from Harvey covered vast spatial extents and lasted for a long
+5-day period, providing a unique chance for evaluating the radar errors,
+especially their spatiotemporal dependence. Using the rainfall data of
+Hurricane Harvey, the authors demonstrate a new method for sampling true
+rainfall over radar pixels (i.e. spatial reference rainfall) based on
+sub-pixel rainfall variability. The new method aims to enlarge sample
+size and allow for compressively evaluating the QPE. Two hourly QPE
+products, the Next Generation Weather Radar (NEXRAD) stage IV and Multi-
+Radar Multi-Sensor (MRMS), are chosen for the evaluation because of
+their roles in major flood forecasting activities; and a dense rain
+gauge network covering the whole Harris County, Texas provides the
+spatial reference rainfall in this analysis. Based on Hurricane Harvey
+and two other flood-inducing storms in Harris County, the stage IV and
+MRMS respectively overestimate and underestimate the total rainfall by a
+small factor, while both QPEs tend to overestimate very light
+precipitation. In addition, spatial correlation of radar errors from
+both QPEs can be described as powered exponential functions of inter-
+pixel distance. This study also includes hydrologic simulation for an
+urban watershed, which indicates the importance of both accuracy and
+spatial resolution of QPE in representing mean areal precipitation (MAP)
+over catchments. <P />
+ER  -  
+
+
