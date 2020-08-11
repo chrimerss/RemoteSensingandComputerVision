@@ -48,6 +48,7 @@
 2. [A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/pdf/1811.07490.pdf)
 3. [Deep Learning for Precipitation Nowcasting: A benchmark and A new model](https://arxiv.org/pdf/1706.03458.pdf)
 4. [Temporal Convolutional Neural Network for the Classification of Satellite Image Time Series](https://arxiv.org/pdf/1811.10166.pdf)
+5. [NCAR DL for atmospheric sciences summer school playlist](https://www.youtube.com/channel/UCjukbq7JkNgGOseEKZjq_kA)
 
 ### ML/DL for rainfall estimation<a name='mlrain'></a> ([notes](https://github.com/chrimerss/RemoteSensingandComputerVision/blob/master/ComputerVision/RainRemoval/rain_removal_notes.pdf))
 
